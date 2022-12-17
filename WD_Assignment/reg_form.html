@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .main {
+            margin: 50px auto;
+            border-radius: 12px;
+            height: auto;
+            width: fit-content;
+            padding: 30px;
+            background-color: rgb(202, 247, 247);
+        }
+
+        h3 {
+            color: red;
+        }
+
+        .header {
+            border-radius: 5px;
+            text-align: center;
+            background-color: rgb(96, 205, 211);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="">
+            <caption>
+                <h1 class="header">Individual Registration</h1>
+            </caption>
+            <table>
+                <h3>Users Particular</h3>
+                <tr>
+                    <td><label for="loginid">*login ID</label></td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">*Password</label></td>
+                    <td><input type="password"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">*Confirm Password</label></td>
+                    <td><input type="password"></td>
+                </tr>
+
+                <table>
+
+                    <h3>Personal particulars</h3>
+                    <tr>
+                        <td><label for="salutation">*Salutation</label></td>
+                        <td> <select name="salutation" id="">
+                                <option value="select">---select---</option>
+                                <option value="Mr.">---Mr.---</option>
+                                <option value="Ms.">---Ms.---</option>
+                                <option value="Mrs.">---Mrs.---</option>
+                            </select>
+                        </td>
+                        <td><label for="fname">*First Name</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+
+
+                        <td><label for="mname">*Middle Name</label></td>
+                        <td><input type="text"></td>
+                        <td><label for="lname">*Last Name</label></td>
+                        <td><input type="text"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><label for="">*Residential Status</label></td>
+                        <td><select name="" id="">
+                                <option value="select">---select---</option>
+                                <option value="Indian">Indian</option>
+                                <option value="NRI">NRI</option>
+                            </select>
+                        </td>
+                        <td><label for="country">*Country</label></td>
+                        <td><select name="country" id="">
+                                <option value="select">---select---</option>
+                                <option value="India">India</option>
+                                <option value="UK">UK</option>
+                                <option value="Germany">Germany</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">*Email-Id</label>
+                        <td><input type="email"></td>
+                        <td><label for="mobile">*Mobile No.</label></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+
+                    <table>
+
+                        <h3>Account Particulars</h3>
+                        <tr>
+                            <td>
+                                <label for="account">*15 digit account no.</label>
+                            </td>
+                            <td><input type="text"></td>
+                            <td><label for="nickname">Nickname</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fund">Fund transfer</label>
+                            </td>
+                            <td>
+                                <select name="fund" id="">
+                                    <option value="select">---Select---</option>
+                                    <option value="IMPS">IMPS</option>
+                                    <option value="NEFT">NEFT</option>
+                                    <option value="RTGS">RTGS</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Declaration:-</h3>
+                    <p>I have understood and agree to all the terms and conditions.</p>
+                    <table>
+                        <tr>
+                            <td class="button"><input type="submit">
+                                <input type="reset">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </table>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
