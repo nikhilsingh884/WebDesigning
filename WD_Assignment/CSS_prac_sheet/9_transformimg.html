@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container img {
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        img:hover {
+            transform: ;
+        }
+
+        .container {
+
+            display: grid;
+            padding: 100px;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 50px;
+        }
+
+        .first {
+            transition: 0.6s ease all;
+
+        }
+
+        .first:hover {
+            transform: scale(1.2) rotate(40deg);
+        }
+
+        .second {
+            transition: 0.6s ease all;
+        }
+
+        .second:hover {
+            transform: scale(1.2) rotateY(60deg);
+        }
+
+        .third {
+            transition: 0.6s ease all;
+        }
+
+        .third:hover {
+            transform: scale(1.2) rotateX(50deg) rotateY(50deg) rotateZ(50deg);
+        }
+
+        .fourth {
+            transition: 0.6s ease all;
+        }
+
+        .fourth:hover {
+            transform: scale(1.2) skewX(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sec1">
+        <div class="container">
+            <div class="first"><img src="1.jfif" alt=""></div>
+            <div class="first"><img src="2.jfif" alt=""></div>
+            <div class="second"><img src="3.jfif" alt=""></div>
+            <div class="second"><img src="4.jfif" alt=""></div>
+            <div class="third"><img src="5.jfif" alt=""></div>
+            <div class="third"><img src="6.jfif" alt=""></div>
+            <div class="fourth"><img src="7.jfif" alt=""></div>
+            <div class="fourth"><img src="8.jfif" alt=""></div>
+        </div>
+    </section>
+</body>
+
+</html>
