@@ -1,0 +1,111 @@
+1. What are the benefits of using CSS? 
+=> CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, etc. And also  the advantages of CSS are-----
+    CSS saves time − You can write CSS once and then reuse the same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.
+
+    Easy maintenance − To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.
+
+    Global web standards − Now HTML attributes are being deprecated and it is being recommended to use CSS. So it's a good idea to start using CSS in all the HTML pages to make them compatible with future browsers.
+
+    Platform Independence − The Script offer consistent platform independence and can support latest browsers as well.
+ 
+2. What are the disadvantages of CSS? 
+=> 
+   * CSS, CSS 1 up to CSS3, result in creating of confusion among  web browsers.
+   * With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.
+   * There exists a scarcity of security.
+   * After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.
+   * The programing language world is complicated for non-developers and beginners. Different levels of CSS i.e. CSS, CSS 2, CSS 3 are often quite confusing.
+   * Browser compatibility (some styles sheet are supported and some are not).
+   * CSS works differently on different browsers. IE and Opera supports CSS as different logic.
+   * There might be cross-browser issues while using CSS.
+   * There are multiple levels which creates confusion for non-developers and beginners.
+
+
+3. What is the difference between CSS2 and CSS3?
+=> 
+    * CSS3 is split into many various documents known as Modules. each module adds new capability or extends options outlined in CSS2 over conserving backward compatibility. Work on CSS3 started around the time of publication of the initial CSS2 recommendation.
+    * The CSS3 version supports more browsers than CSS2.
+    * CSS3 introduces several new selectors. Those new selectors square measure largely in an exceeding type of pseudo-elements and pseudo-categories.
+    * The new addition of General relation Combinator will be wont to match relation parts of a given part through diacritic (~) combinator.
+    * CSS3 introduces several properties attended with new values and units. It facilitates styling of backgrounds, borders, boxes, etc…, that permits the USA to stay most of the styling at intervals the computer network and HTML standards and our document, while not a necessity for all those proprietary third-party package packages.
+    * New values and new units square measure introduced to support all those new properties. for example, Angle units deg, grad, rad, and switch or Time units s and ms.
+
+4. Name a few CSS style components 
+=> Selector: class name, id name or element name that is target
+   Attribute: name of the attribute you want to style for example border, color,background, position etc.
+   Value of Property: value that will be assigned to attribute.
+
+5. What do you understand by CSS opacity? 
+=> The opacity property sets the opacity level for an element. The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent. Note: When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well.
+
+6. How can the background color of an element be changed? 
+=>  using the background-color CSS property and giving it a value of a color. p { background-color: pink; } With this code, the paragraphs are given a pink background.
+
+7. How can image repetition of the backup be controlled? 
+=> The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+
+8. What is the use of the background-position property? 
+=> The background-position property in CSS is mainly used to sets the initial position for the background image ie., it is used to set an image at a certain position. The position that is relative to the positioning layer, can be set by using the background-origin property.
+
+9. Which property controls the image scroll in the background?
+=> The background-attachment property controls the image scroll in the background.
+
+10. Why should background and color be used as separate properties? 
+=> 
+    1. It makes the style sheets more legible. Background property, which is complex in itself, becomes all the more complex with color.
+
+    2. Color is an in-built property while the background is not one. And this can lead to a lot of confusion.
+
+11. How to center block elements using CSS1? 
+=> we have one property value “auto” which will automatically set the margin such that our block element is placed in the center. 
+
+12. How to maintain the CSS specifications? 
+=>  *The CSS specificity is important only when various selectors are affecting the same element. In this case, the browser needs a way to identify the style to be applied to the matching element, and CSS specificity is the way of doing it.
+    *When two or more selectors have equal specificity value, then the latest one considers.
+    *Universal selectors (*) and the inherited values have lower specificity, i.e., 0 specificity.
+    *The style property has a greater specificity value compare to the selectors (except the !important in the stylesheet selector).
+    *The !important alter the selector specificity. When two selectors have equal specificity, then the selector having !important.
+
+
+13. What are the ways to integrate CSS as a web page? 
+=>  there are three ways to integrate css as a web page
+  a.) inline : HTML elements may have css applied to them via STYLE attribute.
+  b.) Embedded: By placing the code in a STYLE element within the HEAD element.
+  c.) Linked/ Imported: Place the CSS in an external file and link it via a link element.
+
+
+14. What is embedded style sheets? 
+=> It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the <style></style> tags containing the CSS properties in the head of your document. Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets. Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time.
+
+15. What are the external style sheets? 
+=> The external style sheet is generally used when you want to make changes on multiple pages. It is ideal for this condition because it facilitates you to change the look of the entire web site by changing just one file.
+
+  It uses the <link> tag on every pages and the <link> tag should be put inside the head section.
+
+16. What are the advantages and disadvantages of using external style sheets? 
+    => The advantages of External Style Sheets are:
+
+    - Using them, the styles of multiple documents can be controlled from one file.
+    - Classes can be created for use on multiple HTML element types in many documents.
+    - In complex situations, selector and grouping methods can be used to apply styles.
+
+    The disadvantages of External Style Sheets are:
+
+    - In order to import style information for each document, an extra download is needed.
+    - Until the external style sheet is loaded, it may not be possible to render the document.
+    - For small number of style definitions, it is not viable.
+
+17. What is the meaning of the CSS selector? 
+    => CSS selectors are used to define the elements you want to style with CSS. There are many different types of CSS selectors, each with their own unique syntax. These tell the browser which elements to apply CSS property values to.
+
+    The element or elements targeted by a CSS selector are referred to as the “subject of the selector.” A subject can be selected based on its element type, class, ID name, given attribute, or pseudo-state.
+
+    With so many different types available, you are not only able to customize your site faster — you’re also able to maintain granular control over your code.
+
+18. What are the media types allowed by CSS? 
+=>  CSS media types are used in media queries, which allow you to apply different styles depending on the output device.
+
+19. What is the rule set? 
+=>  A rule, or “rule set,” is an instruction that tells browsers how to display specific elements on an HTML page. A rule set consists of a selector followed by a declaration block. The declaration tells a browser how to draw an element on a selected page.
+
+    While data rules capture an understanding of data quality at the columnar level (as they are executed or associated with one or multiple columns) and provide information about which records meet or do not meet an individual rule, they do not capture how a record within a data source conforms to multiple data rules, for example, how many rules does a specific record break, nor do they identify the overall quality or confidence in a data source. Rule sets provide the capability to achieve this broader, more holistic, view of a data source and its records by executing and evaluating multiple rules together against individual records.
