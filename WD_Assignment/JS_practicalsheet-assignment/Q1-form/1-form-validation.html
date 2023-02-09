@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="JS-blank-error.js"></script>
+    <script src="JS-validation.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        form {
+            margin: 40px auto;
+            padding: 30px;
+            height: auto;
+            width: 50%;
+            border: 1ps solid gray;
+            box-shadow: 0 0 3px gray;
+        }
+
+        .row {
+            display: flex;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .col-1 {
+            flex: 1;
+            text-align: right;
+        }
+
+        .col-2 {
+            flex: 2;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        span {
+            color: red;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .btn-div {
+            text-align: center;
+        }
+
+        .btn-div button {
+            border: 1px solid gray;
+            padding: 3px 15px;
+            border-radius: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="" name="form1">
+            <h1 style="font-size: 36px; font-weight: 400; text-align: center; padding-bottom: 30px;">Registration</h1>
+            <div class="row">
+                <div class="col-1"><label for="">First Name: </label></div>
+                <div class="col-2">
+                    <input type="text" id="fname" onkeyup="return fnamevalid()" onblur="return fnameblank()">
+                    <span id="fname-msg"></span>
+                    <span id="fname-msg-2"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"><label for="">Middle Name: </label></div>
+                <div class="col-2">
+                    <input type="text" id="mname" onkeyup="return mnamevalid()" onchange="return mnameblank()">
+                    <span id=" mname-msg"></span>
+                    <span id="mname-msg-2"></span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"><label for="">Last Name: </label></div>
+                <div class="col-2">
+                    <input type="text" id="lname" onkeyup="return lnamevalid()" onchange="return lnameblank()">
+                    <span id="lname-msg"></span>
+                    <span id="lname-msg-2"></span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"><label for="">Address: </label></div>
+                <div class="col-2">
+                    <textarea name="address" id="addr" cols="25" rows="4" onchange="return addrvalid()"></textarea>
+                    <span id="addr-msg"></span>
+                    <span id="addr-msg-2"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Date of Birth: </label>
+                </div>
+                <div class="col-2">
+                    <input type="date" name="" id="dob" onchange="return dobblank()">
+                    <span id="dob-msg"></span>
+                    <span id="dob-msg-2"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Gender: </label>
+
+                </div>
+                <div class="col-2">
+                    <input type="radio" name="gen" id="male">Male
+                    <input type="radio" name="gen" id="female">Female
+                    <input type="radio" name="gen" id="other">Other
+                    <span id="gender-msg"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"><label for="">Experience (in years): </label></div>
+                <div class="col-2">
+                    <select name="" id="experience" value=-1>
+                        <option value=-1>---select---</option>
+                        <option value="">0-1</option>
+                        <option value="">1-3</option>
+                        <option value="">3-5</option>
+                        <option value="">5 or more</option>
+                    </select>
+                    <span id="experience-msg"></span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"><label for="">Enter Mobile no. : </label></div>
+                <div class="col-2">
+                    <input type="text" id="mobile" maxlength="10">
+                    <span id="mobile-msg"></span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"><label for=""></label></div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"><label for=""></label></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="btn-div"><button type="submit" onclick="return formblank()">Submit</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
