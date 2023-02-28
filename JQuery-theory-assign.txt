@@ -1,0 +1,11 @@
+1) What is jQuery? 
+-> jQuery is a JavaScript library that simplifies the process of creating dynamic and interactive web pages. It is designed to make client-side scripting easier and more efficient by providing a set of functions and methods that can be used to manipulate HTML documents, handle events, and perform animations.
+
+2) How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,JQuery Animation?
+-> We can apply CSS to HTML elements using jQuery's css() method. The css() method takes two parameters: the name of the CSS property and the value you want to set for that property.
+We can add or remove a CSS class from an element using jQuery's addClass() and removeClass() methods. The addClass() method adds a class to the element, while the removeClass() method removes a class from the element.
+
+3) How to create slider with animation? 
+->To create a slider with animation using bxSlider, you can follow these steps:
+
+First, we need to download and include the bxSlider CSS and JavaScript files in your HTML document. We can download them from the bxSlider website or use a CDN.Next,we have to create an HTML structure for our slider. This should be a container element that holds the slide elements.Then, initialize the bxSlider plugin on the container element using jQuery. We can customize the settings of the slider using various options.Finally, add some CSS styles to customize the appearance of the slider.
