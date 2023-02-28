@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+            padding: 5px;
+        }
+
+        button {
+            background: none;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        button #menu {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 5px;
+            padding: 0px 5px;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $menu = $("#menu");
+            $("#hamburger").click(function () {
+                $("#menu").toggle();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <button id="hamburger" onclick="showMenu()">
+            <span class="fa-solid fa-bars"></span>
+            <div id="menu">
+                <ul>
+                    <li><a href="">falana</a></li>
+                    <li><a href="">dhimkana</a></li>
+                    <li><a href="">falana</a></li>
+                    <li><a href="">dhimkana</a></li>
+                    <li><a href="">falana</a></li>
+                </ul>
+            </div>
+        </button>
+    </div>
+</body>
+
+</html>

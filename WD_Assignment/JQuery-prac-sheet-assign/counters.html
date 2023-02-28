@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+
+    <script>
+        function counter() {
+            var count = setInterval(function () {
+                var c = parseInt($(".count").text());
+                $('.count').text((++c).toString());
+                if (c == 100) {
+                    clearInterval(count);
+                }
+            }, 1000)
+        }
+        counter(); 
+    </script>
+
+    <style>
+        .div1 {
+            color: rgb(2, 2, 54);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="count">0</div>
+    </div>
+</body>
+
+</html>
