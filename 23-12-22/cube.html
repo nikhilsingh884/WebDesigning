@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 0px auto;
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .div1 {
+            height: 200px;
+            width: 200px;
+            background-color: rgba(165, 42, 42, 0.36);
+            border: 3px solid;
+
+            transform: rotateX(294deg) rotatey(359deg) rotateZ(314deg);
+
+        }
+
+        .div2 {
+            height: 201px;
+            width: 175px;
+            border: 3px solid;
+            background-color: rgba(165, 118, 42, 0.42);
+
+            transform: rotateX(307deg) rotatey(37deg) rotateZ(15deg) translate(37px, -133px);
+        }
+
+        .div3 {
+            height: 157px;
+            width: 211px;
+            border: 3px solid;
+            background-color: rgba(218, 201, 12, 0.447);
+
+            transform: rotateX(43deg) rotatey(379deg) rotateZ(282deg) translate(336px, -176px);
+
+        }
+
+        .main {
+            transition: 1s ease;
+            transform: rotatey(40deg);
+        }
+
+        .main:hover {
+            transform: rotatey(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+
+</html>

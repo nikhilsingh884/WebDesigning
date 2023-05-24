@@ -1,0 +1,57 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pattern {
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(242, 242, 242);
+    background-repeat: no-repeat;
+    border-radius: 5%%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    margin: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+    height: 300px;
+    width: 250px;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px;
+    overflow: auto;
+
+
+}
+
+.color {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(#05681c 20%, #000000 50%, #06e654 90%);
+}
+
+.radial {
+    height: 300px;
+    width: 300px;
+    background: radial-gradient(circle at top, #e60b0b, #bb890a, #74b40d, #0cb373);
+}
+
+.div3 {
+    /* set degree in only conic-gradient */
+    background: conic-gradient(#053566 22deg,
+            #a2b611 61deg,
+            #5c3e11 137deg,
+            #831a2c 309deg,
+            #053566 346deg);
+}

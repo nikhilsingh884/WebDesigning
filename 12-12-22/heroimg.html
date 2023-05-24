@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+
+            position: sticky;
+            top: 0px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            backdrop-filter: blur(8px);
+        }
+
+        ul {
+            width: 50%;
+            padding: 10px;
+            letter-spacing: 1.1 px;
+            display: flex;
+            justify-content: space-around;
+            word-spacing: 10px;
+            align-items: right;
+            cursor: pointer;
+        }
+
+
+        .hero-text {
+            position: absolute;
+            top: 200px;
+            color: rgb(238, 238, 238);
+            margin-left: 80px;
+            font-size: 40px;
+        }
+
+        .image {
+            position: relative;
+            height: 500px;
+            width: 100%;
+            filter: blur(4px);
+
+        }
+
+        .divimg {
+            height: 100%;
+            width: 100%;
+        }
+
+        .btn {
+            height: 40px;
+            width: 150px;
+            background-color: rgb(38, 183, 166);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul type="none">
+            <li>Intraday</li>
+            <li>Swing</li>
+            <li>Positional</li>
+            <li>FnO</li>
+            <li>Master</li>
+        </ul>
+    </nav>
+
+    <div class="hero-img">
+        <img class="image" src="stockchart.jpg" alt="">
+        <div class="hero-text">
+            <h1>Learn from the bests.</h1>
+            <h3 style="color:rgb(244, 244, 244)">Book your seat now <br>
+                <span><button class="btn">Enroll
+                        now</button></span>
+
+            </h3>
+
+        </div>
+    </div>
+    <div>
+        <img class="divimg" src="stockwhite.jpg" alt="">
+        <img class="divimg" src="fox.jfif" alt="">
+        <img class="divimg" src="tiger.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
